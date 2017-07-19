@@ -35,7 +35,7 @@ module Plutus
     belongs_to :parent, foreign_key: "plutus_account_id", class_name: "Plutus::Account"
     has_many :children, foreign_key: "plutus_account_id", class_name: "Plutus::Account"
 
-    has_one :target
+    belongs_to :target, polymorphic: true
 
     has_many :amounts
     has_many :credit_amounts, :extend => AmountsExtension, :class_name => 'Plutus::CreditAmount'
