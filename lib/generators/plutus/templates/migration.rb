@@ -4,6 +4,7 @@ class CreatePlutusTables < ActiveRecord::Migration
       t.string :name
       t.string :type
       t.boolean :contra
+      t.references :target, polymorphic: true, index: true
       
       t.integer :code, index: true
       t.integer :rollup_code, index: true
