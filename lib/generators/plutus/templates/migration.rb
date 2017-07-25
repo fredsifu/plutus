@@ -6,8 +6,8 @@ class CreatePlutusTables < ActiveRecord::Migration
       t.boolean :contra
       t.references :target, polymorphic: true, index: true
       
-      t.integer :code, index: true
-      t.integer :rollup_code, index: true
+      #t.integer :code, index: true
+      #t.integer :rollup_code, index: true
       t.references :plutus_account, index: true
 
       t.timestamps
