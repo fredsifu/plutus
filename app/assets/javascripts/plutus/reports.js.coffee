@@ -1,2 +1,2 @@
-jQuery ->
-  $('.datepicker').datepicker dateFormat: "yy-mm-dd"
+#jQuery ->
+#  $('.datepicker').datepicker dateFormat: "yy-mm-dd"
